@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Làm bài trắc nghiệm</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Trắc nghiệm Sử giữa kì 2 lớp 11</h1>
+
+      <div class="top-bar">
+        <button id="themeToggle">ĐỔI GIAO DIỆN SÁNG TỐI</button>
+        <div id="timer"></div>
+      </div>
+
+      <div id="quiz"></div>
+
+      <button id="submit">Nộp bài</button>
+      <button id="retry">Làm lại</button>
+
+      <div id="result"></div>
+      <div id="resultTF"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-left">
+        Mẫu web câu hỏi trắc nghiệm miễn phí<br />
+        Mã nguồn mở nên anh em lấy thoải mái<br />
+
+        <a
+          class="github-link"
+          href="https://github.com/HieuTrung0937/tracnghiemmienphi.git"
+          target="_blank"
+        >
+          GitHub Source
+        </a>
+      </div>
+
+      <div class="footer-right">
+        Thiết kế bởi Nguyễn Trung Hiếu<br />
+        Học sinh trường THPT Trần Văn Kiết
+      </div>
+    </footer>
+    <div id="imgModal" class="img-modal" onclick="closeImage()">
+      <img id="imgPreview" />
+    </div>
+    <script src="./data/questions.js"></script>
+    <script src="./js/quiz.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
