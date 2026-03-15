@@ -8,12 +8,23 @@ document.getElementById("submit").onclick = function () {
 `;
 };
 
-document.getElementById("retry").onclick = function () {
-  renderQuiz();
+const retryBtn = document.getElementById("retry");
+const modal = document.getElementById("retryModal");
 
-  document.getElementById("result").innerHTML = "";
+retryBtn.onclick = function () {
+  modal.style.display = "flex";
 };
 
+document.getElementById("cancelRetry").onclick = function () {
+  modal.style.display = "none";
+};
+
+document.getElementById("confirmRetry").onclick = function () {
+  modal.style.display = "none";
+
+  renderQuiz();
+  document.getElementById("result").innerHTML = "";
+};
 renderQuiz();
 
 const themeToggle = document.getElementById("themeToggle");

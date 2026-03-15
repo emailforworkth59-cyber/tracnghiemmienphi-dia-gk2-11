@@ -20,7 +20,7 @@
       <div id="quiz"></div>
 
       <button id="submit">Nộp bài</button>
-      <button id="retry">Làm lại</button>
+      <button id="retry" onclick="retryQuiz()">Làm lại</button>
 
       <div id="result"></div>
       <div id="resultTF"></div>
@@ -43,6 +43,17 @@
       <div class="footer-right">
         Thiết kế bởi Nguyễn Trung Hiếu<br />
         Học sinh trường THPT Trần Văn Kiết
+      </div>
+      <div id="retryModal" class="modal">
+        <div class="modal-box">
+          <h3>Làm lại bài?</h3>
+          <p>Mọi đáp án hiện tại sẽ bị xoá.</p>
+
+          <div class="modal-buttons">
+            <button id="cancelRetry" class="btn-cancel">Huỷ</button>
+            <button id="confirmRetry" class="btn-confirm">Làm lại</button>
+          </div>
+        </div>
       </div>
     </footer>
     <div id="imgModal" class="img-modal" onclick="closeImage()">
